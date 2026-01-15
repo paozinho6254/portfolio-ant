@@ -18,27 +18,21 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="mt-16 mb-10 flex justify-center"> {/* 1. Aumentei a largura máxima do container pai e centralizei */}
+          <div className="mt-16 mb-10 flex justify-center">
 
-            <div className="relative w-[900px] h-[600px] border border-cyberNavy/40 p-2 bg-black group rounded-lg"> {/* 2. Aumentei o padding (p-2) e adicionei bordas arredondadas */}
+            <div className="relative w-[900px] h-[600px] border border-cyberNavy/40 p-2 bg-black group rounded-lg">
 
-              {/* Container da Imagem - AQUI DEFINIMOS A ALTURA */}
               <div className="relative w-full h-full overflow-hidden bg-gray-900 rounded-md font-mono">
-
-                {/* A Imagem em si */}
                 <Image
                   src="/images/minhas/Eu.png"
                   alt="Foto de perfil de Antônio Rocha"
-                  fill // 3. Usamos 'fill' para preencher o container pai
-                  // O 'object-cover' garante que a foto não fique esticada, ela se adapta.
+                  fill 
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Linhas decorativas nos cantos (Ajustadas para bordas arredondadas) */}
                 <div className="absolute top-2 left-2 w-6 h-6 border-t-2 border-l-2 border-cyberNavy rounded-tl-sm z-10"></div>
                 <div className="absolute bottom-2 right-2 w-6 h-6 border-b-2 border-r-2 border-cyberNavy rounded-br-sm z-10"></div>
 
-                {/* Opcional: Um overlay sutil para dar mais "drama" cyberpunk */}
                 <div className="absolute inset-0 bg-cyberNavy/10 mix-blend-overlay z-0 pointer-events-none"></div>
               </div>
             </div>
