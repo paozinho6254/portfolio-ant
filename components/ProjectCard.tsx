@@ -49,7 +49,7 @@ export default function ProjectCard({ titulo, registroId, descricao, imagens }: 
         </div>
 
         <button onClick={proximo} className="text-cyberNavy hover:scale-110 transition-transform">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" transform="rotate(180 12 12)"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" transform="rotate(0 12 12)"/></svg>
         </button>
       </div>
 
