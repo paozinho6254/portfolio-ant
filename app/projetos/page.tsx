@@ -9,6 +9,7 @@ const MEUS_PROJETOS = [
     e Flutter para que seja possível marcar uma consulta apenas pelo celular.",
     imagens: [
       "/images/projetos/clicare/clicare telas.png",
+      "/images/projetos/clicare/Tela de login.png",
     ]
   },
   {
