@@ -4,13 +4,14 @@ import Image from "next/image";
 
 interface AchievementProps {
   titulo: string;
+  registroId: string;
   instituicao: string;
   data: string;
   descricao: string; 
   imagens: string[];
 }
 
-export default function AchievementCard({ titulo, instituicao, data, descricao, imagens }: AchievementProps) {
+export default function AchievementCard({ titulo, registroId, instituicao, data, descricao, imagens }: AchievementProps) {
   const [indice, setIndice] = useState(0);
 
   const proximo = () => setIndice((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
@@ -47,7 +48,7 @@ export default function AchievementCard({ titulo, instituicao, data, descricao, 
       <div className="mt-4 p-4 border-l-2 border-cyberNavy bg-cyberNavy/5">
         <div className="flex justify-between items-start mb-2">
           <p className="text-[10px] font-mono text-cyberNavy uppercase tracking-[0.2em]">
-            // CREDENCIAL_VERIFICADA
+            // CREDENCIAL_VERIFICADA{registroId}
           </p>
           <span className="text-[10px] font-mono text-gray-500 italic">{data}</span>
         </div>
