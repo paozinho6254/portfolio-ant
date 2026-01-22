@@ -5,6 +5,7 @@ const MINHAS_CONQUISTAS = [
   {
     id: 1,
     titulo: "Ensino Médio Integrado - Técnico em Desenvolvimento de sistemas",
+    registroid: "1",
     instituicao: "Escola SESI",
     data: "2023-2025",
     descricao: "Ensino médio técnico focado na base da computação. Destaque para a participação no grupo de iniciação científica, onde desenvolvi habilidades de pesquisa, documentação técnica e trabalho colaborativo em projetos de software.",
@@ -17,6 +18,7 @@ const MINHAS_CONQUISTAS = [
   {
     id: 2,
     titulo: "+Devs2Blu - Flutter",
+    registroid: "2",
     instituicao: "SENAI / FIESC",
     data: "2025",
     descricao: "Formação Fullstack, conjunto de desenvolvimento móvel em React Native e Flutter. Além do conteúdo, este programa me fez desenvolver e aprimorar habilidades essenciais, trabalho em equipe, coordenação, e  muitas outras softskills foram exploradas com exito graças ao programa.",
@@ -40,6 +42,7 @@ const MINHAS_CONQUISTAS = [
   {
     id: 3,
     titulo: "Programa Jovem Progamador",
+    registroid: "3",
     instituicao: "SENAC / SEPROSC",
     data: "2024",
     descricao: "Formação intensiva focada em tecnologias de mercado. Durante o curso, aprofundei conhecimentos em lógica avançada, arquitetura de banco de dados SQL e desenvolvimento de interfaces modernas",
@@ -51,12 +54,14 @@ const MINHAS_CONQUISTAS = [
   {
     id: 4,
     titulo: "IX FEBIC - Feira Brasileira de Iniciação Científica",
+    registroid: "4",
     instituicao: "FEBIC / IBIC",
     data: "2024",
     descricao: "Formação intensiva focada em tecnologias de mercado. Durante o curso, aprofundei conhecimentos em lógica avançada, arquitetura de banco de dados SQL e desenvolvimento de interfaces modernas",
     imagens: [
-      "/images/certificadosconquistas/febic/UC1.png",
-      "/images/certificadosconquistas/febic/UC2.png",
+      "/images/certificadosconquistas/Febic/premio.jpeg",
+      "/images/certificadosconquistas/Febic/standfebic.jpeg",
+      "/images/certificadosconquistas/Febic/grupoconhecido.jpeg",
     ]
   }
 ];
@@ -80,6 +85,7 @@ export default function ConquistasPage() {
             {MINHAS_CONQUISTAS.map((item) => (
               <AchievementCard
                 key={item.id}
+                registroId={item.registroid}
                 titulo={item.titulo}
                 instituicao={item.instituicao}
                 data={item.data}
