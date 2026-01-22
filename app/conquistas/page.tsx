@@ -9,7 +9,9 @@ const MINHAS_CONQUISTAS = [
     data: "2023-2025",
     descricao: "Ensino médio técnico focado na base da computação. Destaque para a participação no grupo de iniciação científica, onde desenvolvi habilidades de pesquisa, documentação técnica e trabalho colaborativo em projetos de software.",
     imagens: [
-
+      "/images/certificadosconquistas/Ensinomédio/Febic.jpeg",
+      "/images/certificadosconquistas/Ensinomédio/ValeEurobotics.jpeg",
+      "/images/certificadosconquistas/Ensinomédio/Certificado final.png",
     ]
   },
   {
@@ -19,20 +21,20 @@ const MINHAS_CONQUISTAS = [
     data: "2025",
     descricao: "Formação Fullstack, conjunto de desenvolvimento móvel em React Native e Flutter. Além do conteúdo, este programa me fez desenvolver e aprimorar habilidades essenciais, trabalho em equipe, coordenação, e  muitas outras softskills foram exploradas com exito graças ao programa.",
     imagens: [
-        "/images/certificadosconquistas/devs/turmaflutter.jpeg",
-        "/images/certificadosconquistas/devs/auladevs.jpeg",
-        "/images/certificadosconquistas/devs/apresentacaohackweek.jpeg",
-        "/images/certificadosconquistas/devs/formaturadevs.jpeg",
-        "/images/certificadosconquistas/devs/hackweek.png",
-        "/images/certificadosconquistas/devs/modulo1.png",
-        "/images/certificadosconquistas/devs/modulo2.png",
-        "/images/certificadosconquistas/devs/modulo3.png",
-        "/images/certificadosconquistas/devs/modulo4.png",
-        "/images/certificadosconquistas/devs/modulo5.png",
-        "/images/certificadosconquistas/devs/modulo6.png",
-        "/images/certificadosconquistas/devs/modulo7.png",
-        "/images/certificadosconquistas/devs/modulo8.png",
-        "/images/certificadosconquistas/devs/modulo9.png",
+      "/images/certificadosconquistas/devs/turmaflutter.jpeg",
+      "/images/certificadosconquistas/devs/auladevs.jpeg",
+      "/images/certificadosconquistas/devs/apresentacaohackweek.jpeg",
+      "/images/certificadosconquistas/devs/formaturadevs.jpeg",
+      "/images/certificadosconquistas/devs/hackweek.png",
+      "/images/certificadosconquistas/devs/modulo1.png",
+      "/images/certificadosconquistas/devs/modulo2.png",
+      "/images/certificadosconquistas/devs/modulo3.png",
+      "/images/certificadosconquistas/devs/modulo4.png",
+      "/images/certificadosconquistas/devs/modulo5.png",
+      "/images/certificadosconquistas/devs/modulo6.png",
+      "/images/certificadosconquistas/devs/modulo7.png",
+      "/images/certificadosconquistas/devs/modulo8.png",
+      "/images/certificadosconquistas/devs/modulo9.png",
     ]
   },
   {
@@ -42,7 +44,19 @@ const MINHAS_CONQUISTAS = [
     data: "2024",
     descricao: "Formação intensiva focada em tecnologias de mercado. Durante o curso, aprofundei conhecimentos em lógica avançada, arquitetura de banco de dados SQL e desenvolvimento de interfaces modernas",
     imagens: [
-        "/images/certificadosconquistas/devs/",
+      "/images/certificadosconquistas/Jovem programdor/UC1.png",
+      "/images/certificadosconquistas/Jovem programdor/UC2.png",
+    ]
+  },
+  {
+    id: 4,
+    titulo: "IX FEBIC - Feira Brasileira de Iniciação Científica",
+    instituicao: "FEBIC / IBIC",
+    data: "2024",
+    descricao: "Formação intensiva focada em tecnologias de mercado. Durante o curso, aprofundei conhecimentos em lógica avançada, arquitetura de banco de dados SQL e desenvolvimento de interfaces modernas",
+    imagens: [
+      "/images/certificadosconquistas/febic/UC1.png",
+      "/images/certificadosconquistas/febic/UC2.png",
     ]
   }
 ];
@@ -64,12 +78,12 @@ export default function ConquistasPage() {
 
           <div className="grid grid-cols-1 gap-20">
             {MINHAS_CONQUISTAS.map((item) => (
-              <AchievementCard 
+              <AchievementCard
                 key={item.id}
                 titulo={item.titulo}
                 instituicao={item.instituicao}
                 data={item.data}
-                descricao={item.descricao} 
+                descricao={item.descricao}
                 imagens={item.imagens}
               />
             ))}
