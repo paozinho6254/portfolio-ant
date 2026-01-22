@@ -47,8 +47,8 @@ export default function AchievementCard({ titulo, registroId, instituicao, data,
       {/* Legenda Estilo Log com Descrição */}
       <div className="mt-4 p-4 border-l-2 border-cyberNavy bg-cyberNavy/5">
         <div className="flex justify-between items-start mb-2">
-          <p className="text-[10px] font-mono text-cyberNavy uppercase tracking-[0.2em]">
-            // CREDENCIAL_VERIFICADA{registroId}
+          <p className="text-xs font-mono text-cyberNavy uppercase tracking-[0.2em]">
+            // CREDENCIAL_VERIFICADA_{registroId}
           </p>
           <span className="text-[10px] font-mono text-gray-500 italic">{data}</span>
         </div>
