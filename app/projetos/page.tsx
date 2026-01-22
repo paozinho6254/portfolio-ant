@@ -26,6 +26,22 @@ const MEUS_PROJETOS = [
       "/images/projetos/sgca/entrevista_SGCA.jpeg",
     ]
   },
+    {
+    id: "03",
+    titulo: "Guichê de senhas para o fesbraer",
+    descricao: "O Fesbraer é o maior evento de Aeromodelismo da américa Latina, isto é, por ser um evento com apresentações de pilotos inscritos, acaba gerando filas nos boxes da pista para realizar os voos, e também vale lembrar que há diferentes categorias voando, sendo aviões escala, Jatos e acrobáticos, \
+    duas categorias não podem voar juntas e o limite de pilotos na pista são 5 cada. Esta organização acaba deixando o evento um completo caos, pois não se sabe quem ou quando pode voar no momento.\n\
+    É por este motivo que desenvolvi um guichê de senhas personalizado online, para ser usado em tempo real, basicamente um piloto nos boxes vai para um espaço retirar seu número de senha da categoria de voo, assim o operador registra o piloto que retirou a senha, mas ai entra a questão, isso vai atrapalhar\
+    durante o evento por conta do tempo de cadastrar? Não, pois para cadastrar o piloto só precisa informar o nome que ele já aparece na lista pilotos cadastros no evento, lista esta que será montada com base nos inscritos em um formulário do Sympla. Com isso os operadores de pista montam janelas de voos\
+    contendo 5 senhas cada, e uma categoria por vez, e como terá uma tela direcionada para os box, além do operador chamar os pilotos pelo microfone, os mesmos poderam acompanhar o progresso da fila, facilitando a organização para preparar o avião/jato para operação de pista, que em alguns casos levam até meia hora de preparo.\e\
+    O app esta sendo em Flutter, mas está em processo de mudar para o React Native para ter uma versão Tanto WEB como Mobile.",
+    imagens: [
+      "/images/projetos/guichesenha/Fila 1.png",
+      "/images/projetos/guichesenha/Fila 2.png",
+      "/images/projetos/guichesenha/Janela categoria.png",
+      "/images/projetos/guichesenha/Janela montagem.png",
+    ]
+  },
 ];
 
 export default function ProjetosPage() {
