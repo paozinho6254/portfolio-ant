@@ -10,6 +10,7 @@ const MINHAS_CONQUISTAS = [
     data: "2023-2025",
     descricao: "Ensino médio técnico focado na base da computação. Destaque para a participação no grupo de iniciação científica, onde desenvolvi habilidades de pesquisa, documentação técnica e trabalho colaborativo em projetos de software.",
     imagens: [
+      "/images/certificadosconquistas/Ensinomédio/eueosmano.jpeg",
       "/images/certificadosconquistas/Ensinomédio/Febic.jpeg",
       "/images/certificadosconquistas/Ensinomédio/ValeEurobotics.jpeg",
       "/images/certificadosconquistas/Ensinomédio/Certificado final.png",
