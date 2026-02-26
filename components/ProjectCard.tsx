@@ -6,10 +6,11 @@ interface ProjectProps {
   titulo: string;
   registroId: string;
   descricao: string;
+  tecnologias: string;
   imagens: string[];
 }
 
-export default function ProjectCard({ titulo, registroId, descricao, imagens }: ProjectProps) {
+export default function ProjectCard({ titulo, registroId, descricao, tecnologias, imagens }: ProjectProps) {
   const [indice, setIndice] = useState(0);
 
   const proximo = () => setIndice((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
@@ -26,7 +27,7 @@ export default function ProjectCard({ titulo, registroId, descricao, imagens }: 
             fill
             className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
           />
-          
+
           {/* Cantos Estilo Cyber */}
           <div className="absolute top-2 left-2 w-6 h-6 border-t-2 border-l-2 border-cyberNavy z-10"></div>
           <div className="absolute bottom-2 right-2 w-6 h-6 border-b-2 border-r-2 border-cyberNavy z-10"></div>
@@ -36,20 +37,20 @@ export default function ProjectCard({ titulo, registroId, descricao, imagens }: 
       {/* Controles de Navegação */}
       <div className="mt-4 flex items-center justify-center gap-6">
         <button onClick={anterior} className="text-cyberNavy hover:scale-110 transition-transform">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
         </button>
 
         <div className="flex gap-2">
           {imagens.map((_, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className={`h-1.5 transition-all duration-300 ${i === indice ? 'w-8 bg-cyberNavy' : 'w-2 bg-gray-800'}`}
             />
           ))}
         </div>
 
         <button onClick={proximo} className="text-cyberNavy hover:scale-110 transition-transform">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" transform="rotate(0 12 12)"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" transform="rotate(0 12 12)" /></svg>
         </button>
       </div>
 
@@ -61,9 +62,12 @@ export default function ProjectCard({ titulo, registroId, descricao, imagens }: 
         <h3 className="text-xl font-bold text-white mb-2 font-mono uppercase tracking-tighter">
           {titulo}
         </h3>
-        <p className="text-sm text-gray-400 leading-relaxed italic">
+        <p className="text-sm text-gray-400 mb-4 leading-relaxed italic">
           "{descricao}"
         </p>
+        <h4 className="text-xl font-bold text-white font-mono tracking-tighter">
+          TÉCNOLOGIAS: [{tecnologias}]
+        </h4>
       </div>
     </section>
   );
