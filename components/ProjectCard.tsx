@@ -62,12 +62,17 @@ export default function ProjectCard({ titulo, registroId, descricao, tecnologias
         <h3 className="text-xl font-bold text-white mb-2 font-mono uppercase tracking-tighter">
           {titulo}
         </h3>
-        <p className="text-sm text-gray-400 mb-4 leading-relaxed italic">
+        <p className="text-sm text-gray-400 mt-3 leading-relaxed italic whitespace-pre-line">
           "{descricao}"
         </p>
-        <h4 className="text-xl font-bold text-white font-mono tracking-tighter">
-          TÉCNOLOGIAS: [{tecnologias}]
-        </h4>
+        {/* No ProjectCard.tsx, abaixo da descrição */}
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tecnologias.split(',').map((tech) => (
+            <span key={tech} className="text-[20px] font-mono bg-cyberNavy/20 text-cyberNavy border border-cyberNavy/30 px-2 py-1 rounded">
+              {tech.trim()}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );

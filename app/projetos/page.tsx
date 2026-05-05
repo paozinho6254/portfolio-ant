@@ -2,32 +2,45 @@ import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 
 const MEUS_PROJETOS = [
+
   {
     id: "01",
-    titulo: "Clicare - +Devs2Blu",
-    descricao: "O CliCare é um app para ser usado para fazer agendamentos em clínicas de maneira mais prática. As tecnologias utilizadas para fazer o desenvolvimento em web é por meio de Java com o FrameWork do SpringBoot, mas com objetivo de desenvolver para aplicações Mobile com Dart \
-    e Flutter para que seja possível marcar uma consulta apenas pelo celular.",
-    tecnologias: "Dart, Flutter, Java, SpringBoot e PostgreSQL",
+    titulo: "Guichê de senhas inteligente - fesbraer",
+    descricao: `O Fesbraer, maior evento de aeromodelismo da América Latina, reúne pilotos de diferentes categorias como escala, jatos e acrobáticos com regras específicas de operação: categorias não podem voar simultaneamente e há limite de até 5 aeronaves na pista. Esse cenário naturalmente gera alta complexidade na organização das filas e da ordem de voo.\W
+   
+    Pensando nisso, desenvolvi um sistema de guichê de senhas inteligente, projetado para organizar o fluxo de pilotos em tempo real durante o evento.\
+   
+    
+    A solução permite que pilotos retirem senhas por categoria, enquanto operadores estruturam janelas de voo organizadas, respeitando as regras operacionais. O sistema também integra uma base de dados previamente construída a partir das inscrições do evento, possibilitando um cadastro rápido e eficiente no momento da chamada.\
+    
+   
+    Durante o 39º Fesbraer, o sistema foi utilizado em ambiente real, apoiando diretamente a organização das apresentações. Além da implementação técnica, atuei também na operação do sistema, coordenando chamadas, alinhando pilotos na pista e ajustando a dinâmica conforme necessário.\
+   
+    
+    Uma tela dedicada permitiu que os pilotos acompanhassem o andamento da fila em tempo real, facilitando a preparação das aeronaves processo que, em alguns casos, pode levar até 30 minutos.\
+    
+    
+    O resultado foi uma melhoria significativa na organização do fluxo de voos, com feedbacks positivos de organizadores e participantes. O sistema cumpriu seu papel na prática e abriu espaço pa  ra futuras evoluções nas próximas edições do evento.`,
+    tecnologias: "Dart, Flutter, NextJS, Supabase, Firebase",
     imagens: [
-      "/images/projetos/clicare/clicare telas.png",
-      "/images/projetos/clicare/Tela de login.png",
+      "/images/projetos/guichesenha/3.jpg",
+      "/images/projetos/guichesenha/4.jpeg",
+      "/images/projetos/guichesenha/1.png",
+      "/images/projetos/guichesenha/2.png",
+      "/images/projetos/guichesenha/5.jpeg",
+      "/images/projetos/guichesenha/6.jpeg",
     ]
   },
 
-    {
+  {
     id: "02",
-    titulo: "Guichê de senhas para o fesbraer",
-    descricao: "O Fesbraer é o maior evento de Aeromodelismo da américa Latina, isto é, por ser um evento com apresentações de pilotos inscritos, acaba gerando filas nos boxes da pista para realizar os voos, e também vale lembrar que há diferentes categorias voando, sendo aviões escala, Jatos e acrobáticos, \
-    duas categorias não podem voar juntas e o limite de pilotos na pista são 5 cada. Esta organização acaba deixando o evento um completo caos, pois não se sabe quem ou quando pode voar no momento.\n\
-    É por este motivo que desenvolvi um guichê de senhas personalizado online, para ser usado em tempo real, basicamente um piloto nos boxes vai para um espaço retirar seu número de senha da categoria de voo, assim o operador registra o piloto que retirou a senha, mas ai entra a questão, isso vai atrapalhar\
-    durante o evento por conta do tempo de cadastrar? Não, pois para cadastrar o piloto só precisa informar o nome que ele já aparece na lista pilotos cadastros no evento, lista esta que será montada com base nos inscritos em um formulário do Sympla. Com isso os operadores de pista montam janelas de voos\
-    contendo 5 senhas cada, e uma categoria por vez, e como terá uma tela direcionada para os box, além do operador chamar os pilotos pelo microfone, os mesmos poderam acompanhar o progresso da fila, facilitando a organização para preparar o avião/jato para operação de pista, que em alguns casos levam até meia hora de preparo.",
-    tecnologias: "Dart, Flutter, NextJS e Supabase",
+    titulo: "Clicare - +Devs2Blu",
+    descricao: "O CliCare é um app para ser usado para fazer agendamentos em clínicas de maneira mais prática. As tecnologias utilizadas para fazer o desenvolvimento em web é por meio de Java com o FrameWork do SpringBoot, mas com objetivo de desenvolver para aplicações Mobile com Dart \
+    e Flutter para que seja possível marcar uma consulta apenas pelo celular.",
+    tecnologias: "Dart, Flutter, Java, SpringBoot, PostgreSQL",
     imagens: [
-      "/images/projetos/guichesenha/1.png",
-      "/images/projetos/guichesenha/2.png",
-      "/images/projetos/guichesenha/3.png",
-      "/images/projetos/guichesenha/4.png",
+      "/images/projetos/clicare/clicare telas.png",
+      "/images/projetos/clicare/Tela de login.png",
     ]
   },
 
